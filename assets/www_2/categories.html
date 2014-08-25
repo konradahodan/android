@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="author" content="www.frebsite.nl" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+        <title>Cyber-Tourisme</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" />
+        <link rel="stylesheet" href="css/costum.css" />
+    </head>
+
+    <body>
+
+        <div data-role="page" data-theme="e" id="categorie">
+            <div data-role="header"  data-theme="b" data-position="fixed">
+                <h2>Categorie-($val)</h2>
+            </div><!--header end -->
+
+            <div data-role="content" id="wrapper">
+                <ul data-role="listview" data-inset="true" data-theme="a" id="root-listview">
+                    <li data-role="divider" data-theme="a">
+                        <span>Categories de cultures</span>   
+                    </li>
+                    <li>
+                        <img src="img/img_cat/musee.png">
+                        <h2>Musées</h2>
+                        <p>Musées historques,</p>
+                    </li>
+                    <li>
+                        <img src="img/img_cat/palais.png">
+                        <h2>Palais Royaux</h2>
+                        <p>Lieux sacrés,palais,reliques,histoires</p>
+                    </li>
+                    <li data-role="divider" data-theme="a">
+                        <p>Mise à jour le<span class="ui-li-count">12-12-2014</span> </p>  
+                    </li>
+
+                </ul><!--listview end -->
+
+            </div><!--content end -->
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="recycle">Sync</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+
+     <!--SCRIPT-->
+        <script type="text/javascript" src="#cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/home_menu.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script> 
+    </body>
+</html>

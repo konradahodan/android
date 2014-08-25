@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <translation id="lang_news">
+        <en>News</en>
+        <fr>Actualités</fr>
+    </translation>
+    <translation id="lang_events">
+        <en>Events</en>
+        <fr>Événements</fr>
+    </translation>
+    <translation id="lang_culture">
+        <en>Cultures</en>
+        <fr>Cultures</fr>
+    </translation>
+    <translation id="lang_shop">
+        <en>Shops</en>
+        <fr>Commerces</fr>
+    </translation>
+    <translation id="lang_hebergement">
+        <en>Accomodation</en>
+        <fr>Hébergements</fr>
+    </translation>
+    <translation id="lang_restaurant">
+        <en>Restoration</en>
+        <fr>Restaurations</fr>
+    </translation>
+    <translation id="lang_transport">
+        <en>Transport</en>
+        <fr>Transport</fr>
+    </translation>
+    <translation id="lang_update">
+        <en>Help</en>
+        <fr>Aide</fr>
+    </translation>
+    <translation id="lang_update">
+        <en>Last update at</en>
+        <fr>Dernière mise à jour le</fr>
+    </translation>
+</translations>

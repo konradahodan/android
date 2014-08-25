@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="author" content="www.frebsite.nl" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+        <title>Cyber-Tourisme</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" />
+        <link rel="stylesheet" href="css/costum.css" />
+    </head>
+
+    <body>
+
+        <div data-role="page" data-theme="e" id="home">
+            <div data-role="header"  data-theme="b" data-position="fixed">
+                <h2>Cyber Tourisme</h2>
+            </div><!--header end -->
+
+            <div data-role="content" id="wrapper">
+                <ul data-role="listview" data-inset="true" data-theme="a" id="root-listview">
+                    <li data-role="divider" data-theme="a">
+                        <span>Services Offerts</span>   
+                    </li>
+                    <li>
+                        <a href="#categorie">
+                            <img src="img/culture.jpg">
+                            <h2>Culture</h2>
+                            <p>Tout sur la culture du cameroun</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categorie">
+                            <img src="img/Hebergement.jpg">
+                            <h2>Hebergement</h2>
+                            <p>Hôtel,residences</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categorie">
+                            <img src="img/restaurants.jpg">
+                            <h3><strong>Restaurants</strong></h3>
+                            <p>Macquis,lieux de restauration</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categorie">
+                            <img src="img/transport.jpg">
+                            <h3><strong>Transport</strong></h3>
+                            <p>Itineraires,moyens de transport</p>
+                        </a>
+                    </li>
+                    <li data-role="divider" data-theme="a">
+                        <p>Mise à jour le<span class="ui-li-count">12-12-2014</span> </p>  
+                    </li>
+
+                </ul><!--listview end -->
+
+            </div><!--content end -->
+            <div id="menu_home" data-role="popup" class="ui-hidden">
+                <ul data-role="listview" data-inset="true">
+                    <li><a data-theme="e" data-role="button" href="#synch" data-icon="recycle">Sync</a></li>
+                    <li><a data-theme="e" data-role="button" href="#langue" data-icon="check">Langue</a></li>
+                </ul>
+            </div>
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#menu_home" class="ui-control-inactive" data-role="button" data-icon="gear" data-rel="popup">Setting</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+        <div data-role="page" data-theme="e" id="categorie">
+            <div data-role="header"  data-theme="b" data-position="fixed">
+                <a href="" data-rel="back" data-icon="back" data-theme="a" >Back</a>
+                <h2>Categorie-($val)</h2>
+            </div><!--header end -->
+
+            <div data-role="content" id="wrapper">
+                <ul data-role="listview" data-inset="true" data-theme="a" id="root-listview">
+                    <li data-role="divider" data-theme="a">
+                        <span>Categories</span>   
+                    </li>
+                    <li>
+                        <a href="#detail">
+                            <img src="img/img_cat/musee.png">
+                            <h3><strong>Musées</strong></h3>
+                            <p>Musées historques,</p>                           
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#detail">
+                            <img src="img/img_cat/musee.png">
+                            <h3><strong>Palais Royaux</strong></h3>
+                            <p>Lieux sacrés,palais,reliques,histoires</p>                           
+                        </a>
+                    </li>
+
+                    <li data-role="divider" data-theme="a">
+                        <p>Mise à jour le<span class="ui-li-count">12-12-2014</span> </p>  
+                    </li>
+
+                </ul><!--listview end -->
+
+            </div><!--content end -->
+            <div id="menu_catgorie" data-role="popup" class="ui-hidden">
+                <ul data-role="listview" data-inset="true">
+                    <li><a data-theme="e" data-role="button" href="#synch" data-icon="recycle">Sync</a></li>
+                    <li><a data-theme="e" data-role="button" href="#langue" data-icon="check">Langue</a></li>
+                </ul>
+            </div>
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#menu_catgorie" class="ui-control-inactive" data-role="button" data-icon="gear" data-rel="popup">Setting</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+        <div data-role="page" data-theme="e" id="detail">
+            <div data-role="header"  data-theme="b" data-position="fixed">
+                <a href="" data-rel="back" data-icon="back" data-theme="a" >Back</a>
+                <h2>Details-($val)</h2>
+            </div><!--header end -->
+
+            <div data-role="content" id="wrapper">
+                <div class="detail_img">
+                    <img src="img/culture.jpg">
+                </div>
+                <h3>Musée historique du katanga</h3>
+                <div data-role="controlgroup" data-type="horizontal" data-theme="e">
+                  <a href="#" class="ui-btn ui-corner-all ui-icon-navigation ui-btn-icon-left">Web</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Email</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Map</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Call</a>
+                </div>
+                <textarea id="txt" style="width:100%; height:200px;">
+Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+
+Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+
+Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.                    
+                </textarea>
+            </div><!--content end -->
+
+            <div id="menu_detail" data-role="popup" class="ui-hidden">
+                <ul data-role="listview" data-inset="true">
+                    <li><a data-theme="e" data-role="button" href="#synch" data-icon="recycle">Sync</a></li>
+                    <li><a data-theme="e" data-role="button" href="#langue" data-icon="check">Langue</a></li>
+                </ul>
+            </div>
+            
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#menu_detail" class="ui-control-inactive" data-role="button" data-icon="gear" data-rel="popup">Setting</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+     <!--SCRIPT-->
+        <!-- >script type="text/javascript" src="cordova.js"></script-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/home_menu.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script> 
+    </body>
+</html>

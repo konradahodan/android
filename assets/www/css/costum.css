@@ -1,0 +1,44 @@
+
+/****
+Costum cybertourisme mobile css
+**/
+.ui-header{
+   background: #4679bd !important;
+   text-align:center;
+}
+
+.ui-btn-icon-left{
+	height:10px;
+}
+
+.ui-header .ui-title{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.ui-footer{color: #ffff}
+.ui-control-inactive.ui-link.ui-btn{
+	border-style: solid; 
+ 	border-color: gray; 	
+}
+
+ .ui-control-active.ui-link.ui-btn{ background: gray; } 
+ .ui-control-inactive.ui-link.ui-btn { background: #4679bd;color: white; } 
+
+ .detail_img img{
+ 	width: 100%!important;
+ 	height: 200px;
+ }
+
+.rightMenu {
+    position: absolute;
+    top:-10%;   
+    right:2%;
+    width: 100px !important;
+}
+
+.rightMenu .ui-collapsible-content .ui-listview {
+    margin: -10px -15px -10px -35px !important;
+}

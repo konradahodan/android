@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="author" content="www.frebsite.nl" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+        <title>Cyber-Tourisme</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" />
+        <link rel="stylesheet" href="css/costum.css" />
+    </head>
+
+    <body>
+
+        <div data-role="page" data-theme="e" id="home">
+            <div data-role="header"  data-theme="b" data-position="fixed">
+            <a href="index.html" data-theme="b" data-transition="slide" style=" margin:5px 0 10px 0;" data-rel="back" data-icon="back">Retour</a>
+                <h2>Catégories</h2>
+            </div><!--header end -->
+
+            <div data-role="content" id="wrapper">
+                <h2>categorie loading</h2>
+                <ul data-role="listview" data-inset="true" data-theme="a" id="root-listview">
+                </ul><!--listview end -->
+
+            </div><!--content end -->
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="recycle">Sync</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+
+     <!--SCRIPT-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/cat_culture.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script> 
+    </body>
+</html>

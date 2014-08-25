@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="author" content="www.frebsite.nl" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+        <title>Cyber-Tourisme</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" />
+        <link rel="stylesheet" href="css/costum.css" />
+    </head>
+
+    <body>
+
+        <div data-role="page" data-theme="e" id="home" data-transition="slide">
+            <div data-role="header"  data-theme="b" data-position="fixed">
+                <h2>Cyber Tourisme</h2>
+            <a href="#settingPopup" data-theme="a" class="ui-btn ui-shadow ui-corner-all ui-icon-bullets ui-btn-icon-notext ui-btn-right" data-rel="popup">
+            </a>
+                <div data-role="popup" id="settingPopup" class="ui-content" data-theme="b">
+                  <h2>Setting</h2>
+                  <div>
+                      <h3><a href="#">Synchronize</a></h3>
+                      <h3><a href="#">English</a></h3>
+                      <h3><a href="#">Frensh</a></h3>
+                  </div>
+                </div>
+  
+            </div><!--header end -->
+
+            <div data-role="content" id="wrapper">
+                <ul data-role="listview" data-inset="true" data-theme="a" id="root-listview">
+                    <li data-role="divider" data-theme="a">
+                        <span>Services Offerts</span>   
+                    </li>
+                    <li>
+                        <a href="#categorie">
+                            <img src="img/culture.jpg">
+                            <h2>Culture</h2>
+                            <p>Tout sur la culture du cameroun</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categorie">
+                            <img src="img/Hebergement.jpg">
+                            <h2>Hebergement</h2>
+                            <p>Hôtel,residences</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categorie">
+                            <img src="img/restaurants.jpg">
+                            <h3><strong>Restaurants</strong></h3>
+                            <p>Macquis,lieux de restauration</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categorie">
+                            <img src="img/transport.jpg">
+                            <h3><strong>Transport</strong></h3>
+                            <p>Itineraires,moyens de transport</p>
+                        </a>
+                    </li>
+                    <li data-role="divider" data-theme="a">
+                        <p>Mise à jour le<span class="ui-li-count">12-12-2014</span> </p>  
+                    </li>
+
+                </ul><!--listview end -->
+
+            </div><!--content end -->
+            <div id="menu_home" data-role="popup" class="ui-hidden">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#synch">Sync</a></li>
+                    <li><a href="#langue">Langue</a></li>
+                </ul>
+            </div>
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#loginControl" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#contactForm" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#helpForm" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+        <div data-role="page" data-theme="e" id="categorie" data-transition="slide">
+        <div data-role="header"  data-theme="b" data-position="fixed">
+            <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-home"></a>           
+                <h2>Categorie-($val)</h2>
+        </div><!--header end -->
+
+
+            <div data-role="content" id="wrapper">
+                <ul data-role="listview" data-inset="true" data-theme="a" id="root-listview">
+                    <li data-role="divider" data-theme="a">
+                        <span>Categories</span>   
+                    </li>
+                    <li>
+                        <a href="#detail">
+                            <img src="img/img_cat/musee.png">
+                            <h3><strong>Musées</strong></h3>
+                            <p>Musées historques,</p>                           
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#detail">
+                            <img src="img/img_cat/musee.png">
+                            <h3><strong>Palais Royaux</strong></h3>
+                            <p>Lieux sacrés,palais,reliques,histoires</p>                           
+                        </a>
+                    </li>
+
+                    <li data-role="divider" data-theme="a">
+                        <p>Mise à jour le<span class="ui-li-count">12-12-2014</span> </p>  
+                    </li>
+
+                </ul><!--listview end -->
+
+            </div><!--content end -->
+
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#loginControl" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+        <div data-role="page" data-theme="e" id="detail" data-transition="slide">
+        <div data-role="header"  data-theme="b" data-position="fixed">
+            <a href="" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-left"></a>           
+                <h2>Détails-($val)</h2>
+            <a href="#home" data-theme="a" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-right">
+            </a>
+        </div><!--header end -->
+
+            <div data-role="content" id="wrapper">
+                <div class="detail_img">
+                    <img src="img/culture.jpg">
+                </div>
+                <h3>Musée historique du katanga</h3>
+                <div data-role="controlgroup" data-type="horizontal" data-theme="e">
+                  <a href="#" class="ui-btn ui-corner-all ui-icon-navigation ui-btn-icon-left">Web</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Email</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Map</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Call</a>
+                </div>
+                <textarea id="txt" style="width:100%; height:200px;">
+Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+
+Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+
+Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.                    
+                </textarea>
+            </div><!--content end -->
+
+            
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#loginControl" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#contactForm" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#helpForm" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+
+        <div data-role="page" data-theme="e" id="loginControl" data-transition="slide">
+        <div data-role="header"  data-theme="b" data-position="fixed">
+            <a href="" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-left"></a>           
+                <h2>Cyber Tourisme</h2>
+            <a href="#home" data-theme="a" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-right">
+            </a>
+        </div><!--header end -->
+
+            <div data-role="content" id="wrapper">
+                <div id="group_bnt">
+                    <ul data-role="listview" data-inset="true">
+                        <li><a href="#AccountForme">Create Account</a></li>
+                        <li><a href="#loginForme">Login</a></li>             
+                    </ul>                    
+                </div>
+            </div><!--content end -->
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#menu_loginControl" class="ui-control-inactive" data-icon="user">Login</a></li>  
+                        <li><a href="#contactForm" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#helpForm" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+
+
+
+        <div data-role="page" data-theme="e" id="loginForme" data-transition="slide">
+        <div data-role="header"  data-theme="b" data-position="fixed">
+            <a href="" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-left"></a>           
+                <h2>Cyber Tourisme</h2>
+            <a href="#home" data-theme="a" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-right">
+            </a>
+        </div><!--header end -->
+
+                <div data-role="content" id="wrapper">
+                <div id="login" class="ui-hidden">
+                    <form action="process.cfm" method="post">
+                 
+                    <fieldset data-role="fieldcontain"> 
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username">
+                    </fieldset>
+         
+                    <fieldset data-role="fieldcontain"> 
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                    </fieldset>         
+                    <input type="submit" value="Connect">
+                    </form>                                  
+                </div>
+
+            </div><!--content end -->
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#loginControl" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#contactForm" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#helpForm" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end --> 
+
+        <div data-role="page" data-theme="e" id="AccountForme" data-transition="slide">
+        <div data-role="header"  data-theme="b" data-position="fixed">
+            <a href="" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-left"></a>           
+                <h2>Cyber Tourisme</h2>
+            <a href="#home" data-theme="a" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-right">
+            </a>
+        </div><!--header end -->
+        <div data-role="content" id="wrapper">
+                <h3>Create Account</h3>
+                <div id="register" class="ui-hidden">
+                    <form action="process.cfm" method="post">
+                 
+                    <fieldset data-role="fieldcontain"> 
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username">
+                    </fieldset>
+         
+                    <fieldset data-role="fieldcontain"> 
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                    </fieldset>
+                    <fieldset data-role="fieldcontain"> 
+                        <label for="password2">Confirm Password:</label>
+                        <input type="password" name="password2" id="password2">
+                    </fieldset>                             
+                    <input type="submit" value="Create accunt">
+                    </form>                                  
+                </div>
+
+
+            </div><!--content end -->
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#loginControl" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#contactForm" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#helpForm" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end --> 
+
+
+        <!--page end --> 
+
+        <div data-role="page" data-theme="e" id="contactForm" data-transition="slide">
+        <div data-role="header"  data-theme="b" data-position="fixed">
+            <a href="" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-left"></a>           
+                <h2>Cyber Tourisme</h2>
+            <a href="#home" data-theme="a" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-right">
+            </a>
+        </div><!--header end -->
+        <div data-role="content" id="wrapper">
+            <h3>Contact CyberTourisme</h3>
+            <div id="contact" class="ui-hidden">
+            <form data-parsley-validate method="post" action="mail.php" data-ajax="false">
+                Name: <input type="text" id="naam" name="naam" value="" placeholder="Name" required/><br>
+                E-mail: <input type="email" id="mail" name="mail" value="" placeholder="E-mail" required/><br>
+                Phone Number: <input type="tel" id="telefoon" name="telefoon" value="" placeholder="Phone"/><br>
+                Subject: <input type="text" id="onderwerp" name="onderwerp" value="" placeholder="Subject" required/><br>
+                Message:<br>
+                <textarea style="height:100px;" id="bericht" name="bericht" placeholder="Enter your message here..." required></textarea> <br />
+          <input type="submit" value="Send" name="submit" class="btn">
+         </form>
+         </div>
+            </div><!--content end -->
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#contactForm" class="ui-control-inactive" data-icon="user">Login</a></li> 
+                        <li><a href="#contactForm" class="ui-control-inactive" data-icon="mail">Contact</a></li> 
+                        <li><a href="#helpForm" class="ui-control-inactive" data-icon="info">Aide</a></li> 
+                    </ul>
+                </div>
+            </div><!--footer end -->
+
+        </div><!--page end -->
+
+
+
+     <!--SCRIPT-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+       <!-- <script type="text/javascript" src="js/home_menu.js"></script>-->
+        <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script> 
+        <script src="js/jquery.mobile.fastButtons.js"></script> 
+    </body>
+</html>
